@@ -11,6 +11,9 @@ You can author your README using Visual Studio Code.  Here are some useful edito
 * [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
 
 **Enjoy!**
+## Example
+![example](https://user-images.githubusercontent.com/66105586/113241345-82068f00-927c-11eb-90fa-b74d82560bf6.png)
+
 ## Things I used
 ### Derived from...
 This these is an adapttation of [Focus theme for Brackets](https://github.com/brucecantarim/brackets-theme-focus) by brucecantarim.
