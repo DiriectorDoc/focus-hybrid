@@ -789,5 +789,28 @@
 				"foreground": "#B267E6"
 			}
 		}
-	]
+	],
+	"semanticTokenColors": {
+        "enabled": true,
+        "rules": {
+            "*.declaration": {
+                "foreground": "#0F0"
+            },
+            "parameter.declaration": {
+                "foreground": "#0EF"
+            },
+            "function.defaultLibrary": {
+                "foreground": "#5CF"
+            },
+            "variable.defaultLibrary": {
+                "foreground": "#5CF"
+            },
+            "class.defaultLibrary": {
+                "foreground": "#5CF"
+            },
+            "property.defaultLibrary": {
+                "foreground": "#0F0"
+            }
+        }
+    },
 }
