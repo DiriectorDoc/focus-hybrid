@@ -1,40 +1,45 @@
 {
-    "name": "focus-hybrid",
-    "displayName": "Focus-Hybrid",
-    "description": "Adaptation and hybrid of the Brackets Focus theme for VSCode",
-    "version": "0.0.1",
+	"name": "focus-hybrid",
+	"displayName": "Focus-Hybrid",
+	"description": "Adaptation and hybrid of the Brackets Focus theme for VSCode",
+	"version": "0.0.2",
 	"publisher": "davijust213",
-    "author": {
-        "name": "Diriector_Doc"
-    },
-    "license": "MIT",
-    "engines": {
-        "vscode": "^1.54.0"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/DiriectorDoc/focus-hybrid"
-    },
-    "bugs": {
-        "url": "https://github.com/DiriectorDoc/focus-hybrid/issues"
-    },
-    "categories": [
-        "Themes"
-    ],
-    "contributes": {
-        "themes": [
-            {
-                "label": "Focus-Hybrid",
-                "uiTheme": "vs-dark",
-                "path": "./themes/Focus-Hybrid-color-theme.json"
-            }
-        ]
-    },
-    "keywords": [
-        "dark",
-        "focus",
-        "brackets",
-        "black",
-        "contrast"
-    ]
+	"author": {
+		"name": "Diriector_Doc"
+	},
+	"license": "MIT",
+	"engines": {
+		"vscode": "^1.54.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/DiriectorDoc/focus-hybrid"
+	},
+	"bugs": {
+		"url": "https://github.com/DiriectorDoc/focus-hybrid/issues"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Focus-Hybrid",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Focus-Hybrid-color-theme.json"
+			}
+		]
+	},
+	"keywords": [
+		"dark",
+		"focus",
+		"brackets",
+		"black",
+		"contrast"
+	],
+	"configurationDefaults": {
+		"*": {
+		  "editor.semanticHighlighting.enabled": true
+		}
+	  }
 }
