@@ -423,7 +423,7 @@
 				"storage.type.primitive.groovy"
 			],
 			"settings": {
-				"foreground": "#4EC9B0"
+				"foreground": "#00ff99"
 			}
 		},
 		{
@@ -655,15 +655,18 @@
 		{
 			"scope": [
 				"variable.other.property.js",
+				"variable.other.property.ts",
 				"entity.name.function.member",
 				"support.type.property-name",
 				"variable.other.constant.property.js",
 				"variable.other.object.property.js",
 				"meta.function-call.js entity.name.function.js",
+				"meta.function-call.ts entity.name.function.ts",
 				"entity.name.type.anchor.yaml",
 				"entity.other.document.begin.yaml",
 				"keyword.control.at-rule.font-face.css",
-				"support.function.json"
+				"support.function.json",
+				"meta.object-literal.key"
 			],
 			"settings": {
 				"foreground": "#00FF00"
@@ -805,7 +808,7 @@
 			"foreground": "#5CF"
 		},
 		"class.defaultLibrary": {
-			"foreground": "#5CF"
+			"foreground": "#0F9"
 		},
 		"property.defaultLibrary": {
 			"foreground": "#0F0"
