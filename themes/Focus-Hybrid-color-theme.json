@@ -7,8 +7,8 @@
 		"editor.foreground": "#ffffff",
 		"editor.inactiveSelectionBackground": "#3a3d41",
 		"editor.selectionHighlightBackground": "#add6ff26",
-		"editorIndentGuide.activeBackground": "#707070",
-		"editorIndentGuide.background": "#404040",
+		"editorIndentGuide.activeBackground1": "#707070",
+		"editorIndentGuide.background1": "#404040",
 		"input.placeholderForeground": "#a6a6a6",
 		"list.dropBackground": "#383b3d",
 		"menu.background": "#252526",
@@ -18,7 +18,11 @@
 		"sideBarTitle.foreground": "#bbbbbb",
 		"statusBarItem.remoteBackground": "#16825d",
 		"statusBarItem.remoteForeground": "#ffffff",
-		"tab.lastPinnedBorder": "#cccccc33"
+		"tab.lastPinnedBorder": "#cccccc33",
+		"editorBracketHighlight.foreground1": "#FFEE00",
+		"editorBracketHighlight.foreground2": "#0099FF",
+		"editorBracketHighlight.foreground3": "#FF00CC",
+		"editorBracketHighlight.unexpectedBracket.foreground": "#F44747"
 	},
 	"tokenColors": [
 		{
@@ -38,6 +42,12 @@
 		},
 		{
 			"scope": "strong",
+			"settings": {
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"scope": "punctuation.definition.bold.markdown",
 			"settings": {
 				"fontStyle": "bold"
 			}
@@ -423,7 +433,7 @@
 				"storage.type.primitive.groovy"
 			],
 			"settings": {
-				"foreground": "#00ff99"
+				"foreground": "#00FF99"
 			}
 		},
 		{
@@ -589,13 +599,11 @@
 			}
 		},
 		{
-			"scope": "storage",
-			"settings": {
-				"foreground": "#FF0044"
-			}
-		},
-		{
-			"scope": "storage.type",
+			"scope": [
+				"storage",
+				"storage.type",
+				"storage.modifier.ts"
+			],
 			"settings": {
 				"foreground": "#FF0044"
 			}
@@ -609,6 +617,8 @@
 		{
 			"scope": [
 				"entity.name.tag.html",
+				"entity.name.tag.xml",
+				"entity.name.tag.localname.xml",
 				"punctuation.definition.tag",
 				"entity.name.type",
 				"variable",
@@ -630,6 +640,7 @@
 		},
 		{
 			"scope": [
+				"entity.name.label",
 				"entity.other.attribute-name",
 				"entity.other.attribute-name.id.css",
 				"markup.bold.markdown",
@@ -646,7 +657,8 @@
 				"entity.other.attribute-name.class.css",
 				"entity.other.attribute-name.class.css punctuation.definition.entity.css",
 				"markup.italic.markdown",
-				"support.type.property-name.json"
+				"support.type.property-name.json",
+				"meta.object-literal.key"
 			],
 			"settings": {
 				"foreground": "#FFEE00"
@@ -674,8 +686,8 @@
 		},
 		{
 			"scope": [
-				"constant.language.boolean.true.js",
-				"constant.language.boolean.false.js",
+				"constant.language.boolean",
+				"constant.language.json",
 				"keyword.other.unit",
 				"constant.other.color.rgb-value",
 				"support.constant.property-value",
@@ -698,13 +710,14 @@
 		},
 		{
 			"scope": [
+				"variable.language.arguments.js",
 				"keyword.operator.new",
 				"keyword",
 				"keyword.operator.expression",
 				"variable.language",
 				"invalid.illegal.expected-dictionary-separator.json.comments",
 				"support.constant.font-name.css",
-				"storage.modifier.async.js",
+				"storage.modifier.async",
 				"storage.modifier.js",
 				"entity.other.attribute-name.pseudo-element.css",
 				"entity.other.attribute-name.pseudo-class.css"
@@ -721,8 +734,8 @@
 				"meta.tag.metadata.doctype.html punctuation.definition.tag.end.html",
 				"meta.tag.metadata.doctype.html entity.name.tag.html",
 				"meta.tag.metadata.doctype.html entity.other.attribute-name.html",
-				"storage.type.function.arrow.js",
-				"punctuation.separator.key-value.js",
+				"storage.type.function.arrow",
+				"punctuation.separator.key-value",
 				"constant.character.escape",
 				"punctuation.definition.entity.css",
 				"keyword.operator"
@@ -751,7 +764,10 @@
 			"scope": [
 				"keyword.other.js",
 				"support.type.object.module.js",
-				"support.constant.json"
+				"support.constant.json",
+				"entity.name.tag.namespace.xml",
+				"punctuation.separator.namespace.xml",
+				"entity.other.attribute-name.namespace.xml"
 			],
 			"settings": {
 				"foreground": "#55CCFF"
@@ -797,6 +813,9 @@
 	"semanticTokenColors": {
 		"*.declaration": {
 			"foreground": "#0F0"
+		},
+		"property.declaration": {
+			"foreground": "#FF0"
 		},
 		"parameter.declaration": {
 			"foreground": "#0EF"
