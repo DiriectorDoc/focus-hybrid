@@ -398,6 +398,7 @@
 		},
 		{
 			"scope": [
+				"keyword.type",
 				"meta.return-type",
 				"support.class",
 				"support.type",
